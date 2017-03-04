@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html ng-app="app">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body ng-controller="mainCtrl">
+    <h1>Aloha</h1>
+    <button ng-click="getPeople()">Get People</button>
+    <button ng-click="getPlanets()">Get Planets</button>
+    <div class="" ng-repeat="person in people">
+      {{person.name}}
+    </div>
+    <br>
+    <div class="">
+      <p>name: {{homeworld.name}}</p>
+      <p>climate: {{homeworld.climate}}</p>
+      <p>rotation period: {{homeworld.rotaion_period}}</p>
+
+    </div>
+    <br>
+    <div class="" ng-repeat="planet in planets">
+      {{planet.name}}
+    </div>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.2/angular.min.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+    <script type="text/javascript" src="controller.js"></script>
+    <script type="text/javascript" src="service.js"></script>
+    <script type="text/javascript" src="differentService.js"></script>
+  </body>
+</html>
